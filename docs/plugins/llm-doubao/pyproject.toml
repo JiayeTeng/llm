@@ -1,0 +1,15 @@
+[project]
+name = "llm-doubao"
+version = "0.1"
+description = "LLM plugin for Doubao's cloud API"
+authors = [{name = "Your Name"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["llm", "httpx"]
+
+[project.urls]
+Homepage = "https://github.com/yourname/llm-doubao"
+Issues = "https://github.com/yourname/llm-doubao/issues"
+
+[project.entry-points.llm]
+doubao = "llm_doubao:DoubaoModel"
